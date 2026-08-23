@@ -1,5 +1,11 @@
 package booking
 
+import "errors"
+
+var (
+	ErrSeatAlreadyBooked = errors.New("Seat is already booked")
+)
+
 type Booking struct {
 	ID      string
 	MovieID string
