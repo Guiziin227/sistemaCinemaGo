@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: cinema
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/cinema}
+    username: ${DB_USER:cinema}
+    password: ${DB_PASSWORD:cinema}
+  sql:
+    init:
+      mode: always
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+server:
+  port: ${PORT:8080}
